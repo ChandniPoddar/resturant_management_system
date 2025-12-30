@@ -1,0 +1,158 @@
+/* ================================
+   ORDER PAGE STYLING
+================================= */
+
+.order {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.order h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff6347;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ================================
+   ORDER LIST
+================================= */
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ================================
+   SINGLE ORDER ITEM CARD
+================================= */
+.order-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-wrap: wrap;
+}
+
+.order-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* ================================
+   LEFT SECTION - IMAGE + INFO
+================================= */
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.order-item div {
+  flex: 1;
+}
+
+.order-item-food {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.order-item-name p {
+  margin: 2px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.order-item-phone {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* ================================
+   RIGHT SIDE DETAILS
+================================= */
+.order-item > p {
+  font-size: 14px;
+  color: #555;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.order-item select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.order-item select:hover {
+  border-color: #ff6347;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .order {
+    width: 95%;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .order-item img {
+    margin-bottom: 10px;
+  }
+
+  .order-item > p {
+    margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .order-item {
+    padding: 15px;
+  }
+
+  .order-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-item-food {
+    font-size: 14px;
+  }
+
+  .order-item-name p,
+  .order-item-phone {
+    font-size: 13px;
+  }
+
+  .order-item select {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+  }
+}

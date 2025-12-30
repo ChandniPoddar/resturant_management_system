@@ -1,0 +1,115 @@
+.place-order {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap; /* responsive support */
+}
+
+/* Left Side - Form */
+.place-order-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.place-order-left .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.place-order-left input:focus {
+  border-color: #ff6f61; /* accent color (like food apps) */
+  box-shadow: 0 0 4px rgba(255, 111, 97, 0.3);
+}
+
+.multi-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+/* Right Side - Cart Total */
+.place-order-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cart-total {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-total h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.cart-total-details b {
+  font-size: 16px;
+  color: #000;
+}
+
+.cart-total button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-total button:hover {
+  background: #e85c50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .multi-fields {
+    flex-direction: column;
+    gap: 0;
+  }
+}
